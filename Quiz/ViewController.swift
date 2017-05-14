@@ -18,6 +18,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    //Defining quiz questions
+    
     var questions: [String] = [
     
     "What is 7+7?",
@@ -25,6 +27,8 @@ class ViewController: UIViewController {
     "What is chocolatte made of?"
     
     ]
+    
+    //Defining quiz answers
     
     var answers: [String] = [
     
@@ -34,14 +38,17 @@ class ViewController: UIViewController {
     
     ]
     
+    // Variable that represents the starting index number of counter for Question and Answer array
+    
     var indexNumber: Int = 0
     
-    
+    //Text labels
     
     @IBOutlet weak var showQuestionLabel: UILabel!
     @IBOutlet weak var showAnswerLabel: UILabel!
     
     
+    //Buttons
     
     @IBAction func nextQuestionButton(_ sender: UIButton) {
         
